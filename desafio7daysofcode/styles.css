@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --cor-fundo-site:#000000;
+    --cor-fundo-cart:#1B2226;
+    --fonte-principal: 'Roboto', sans-serif;
+    --cor-principal:rgba(255, 255, 255, 0.9);
+    --cor-secundaria:rgba(255, 255, 255, 0.6);
+    --azul-claro:#70B5F9;
+    --texto-escuro:rgba(0, 0, 0, 0.75);
+    --cor-fundo-pesquisar:#38434F;
+    --cor-paragrafos:#FFFFFF;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    background-color: var(--cor-fundo-cart);
+    margin: -0.46em -1em 0;
+}
+
+.logo-linkedin{
+   margin: -0.1em 0 0 8em;
+}
+
+
+.lupa{
+    position: absolute;
+    padding-left: 11.4em;
+    padding-top: 0.9em;
+}
+
+
+.pesquisar{
+    background-color: var(--cor-fundo-pesquisar);
+    border: none;
+    color: var(--cor-principal);
+    border-radius: 0.3em;
+    padding: 1em;
+    padding-left: 2.5em;
+    width: 17.5em;
+    height: 2.5em;
+    margin-left: 1em;
+    margin-top: 0.7em;
+    
+}
+
+.pesquisar::placeholder{
+    position: absolute;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    background-position: 1em;
+    
+}
+
+.links{
+    display: flex;
+    padding-left: 5em;
+    
+}
+
+.links__imagens{
+    padding-top: 1em;
+    margin-right: 2em;
+    margin-top: -0.5em;
+}
+
+
+body{
+    background-color: var(--cor-fundo-site);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    color: var(--cor-principal);
+}
+
+.perfil{
+    background-color: var(--cor-fundo-cart);
+    border-radius: 1em;
+    width: 48.8em;
+    height: 30em;
+    top: 4.8em;
+    left: 9.7em;
+    margin-left: 6em;
+    margin-top: 1em;
+}
+
+.informacoes-perfil__descricao{
+    padding-left: 1.5em;
+}
+
+.informacoes-perfil__capa{
+    position: relative;
+    
+    
+}
+
+.informacoes-perfil__perfil{
+    position: absolute;
+    float: left;
+    padding-top: 10em;
+    top: 2em; 
+    left: 2.5em;
+    margin-left: 6em;
+}
+
+.informacoes-perfil__nome{
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.informacoes-perfil__competencias{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: -1.8em;
+}
+
+.informacoes-perfil__hashtag{
+    font-weight: 400;
+    font-size: 0.8em;
+    color:var(--cor-secundaria);
+}
+
+.informacoes-perfil__local-contato{
+    display: flex;
+    font-size: 0.8em;
+    margin: -1.25em;
+    padding-left: 1.2em;
+    margin-top: -2em;
+}
+
+.informacoes-perfil__local{
+    color: var(--cor-secundaria);
+    font-weight: 400;
+}
+
+.informacoes-perfil__eclipse{
+    padding: 1.7em 0.6em;
+    width: 0.2em;
+    height: 0.2em;
+    
+}
+
+.informacoes-perfil__contato{
+    font-weight: 700;
+    color: var(--azul-claro);
+    text-decoration: none;
+    padding-top: 1em;
+}
+
+.informacoes-perfil__conecoes{
+    display: flex;
+    font-size: 0.8em;
+    color: var(--azul-claro);
+}
+
+.perfil-acoes{
+    font-size: 0.8em;
+    padding: 0 2em;
+}
+
+.perfil-acoes__mensagem{
+    text-decoration: none;
+    color: var(--texto-escuro);
+    border: 1px solid var(--azul-claro);
+    background: var(--azul-claro);
+    border-radius: 1em;
+    padding: 0.5em 2.4em;
+    
+}
+
+.perfil-acoes__mais{
+    text-decoration: none;
+    color: var(--azul-claro);
+    border: 1px solid var(--azul-claro);
+    border-radius: 1em;
+    margin-left: 2em;
+    padding: 0.5em 4em;
+    
+}
+
+.detalhes-carreira{
+    text-align: right;
+    width: 11.8em; 
+    height:4.5em;
+    margin-left: 30em;
+    margin-top: -12em;
+
+}
+
+.detalhes-carreira__empresa{
+    padding-right: 2.85em;
+}
+
+.detalhes-carreira__instituicao-ensino{
+    padding-left: 2.5em;
+    padding-top: 0.5em;
+}
+
+.destaques{
+    background-color: var(--cor-fundo-cart);
+    font-weight: 400;
+    border-radius: 1em;
+    width: 47.3em;
+    height: 19.5em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+}
+
+.destaque__titulo{
+    font-weight: 600;
+    font-size: 1.25em;
+    
+}
+
+.detaques__publicacoes{
+    display: flex;
+    margin-left: -1.5em;
+}
+
+.destaques__publicacao{
+    border: 1px solid var(--cor-principal);
+    margin-left: 1em;
+    border-radius: 0.5em;
+    width: 14.8em;
+    height: 14.75em;
+}
+
+.destaques__publicacao__titulo{
+    color: var(--cor-secundaria);
+    font-size: 0.75em;
+    padding-left: 1em;
+    padding-top: 1em;
+    
+}
+
+.destaques__publicacao__paragrafo{
+    font-size: 0.9em;
+    margin-top: -0.2em;
+    padding-left: 0.8em;
+}
+
+.destaques__publicacao__imagem{
+    width: 14.8em;
+    height: 8em;
+    margin-top: -0.3em;
+}
+
+.reacoes__comentarios{
+    display: flex;
+}
+
+.destaques__numero__reacoes{
+    color: var(--cor-secundaria);
+    font-size: 0.75em;
+}
+
+.destaques__comentarios {
+    color: var(--cor-secundaria);
+    font-size: 0.75em;
+    padding-left: 8em;
+}
+
+.atividades{
+    background-color: var(--cor-fundo-cart);
+    font-weight: 400;
+    border-radius: 1em;
+    width: 47.3em;
+    height: 23.2em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+    color: var(--cor-secundaria);
+}
+
+.atividades__titulo{
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+
+.atividades__paragrafo{
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var(--azul-claro);
+    margin-top: -1em;
+}
+
+.atividades__publicacao__titulo{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+    
+    
+}
+
+.atividades__eclipse{
+    padding: 1.7em 0.6em;
+    width: 0.2em;
+    height: 0.2em;
+}
+
+
+
+.atividades__publicacao__sobre-a-publicacao{
+    display: flex;
+}
+
+.atividades__publicacao__sobre-a-publicacao__img{
+    padding-top: 1em;
+    height: 3.5em;
+}
+
+.atividades__publicacao__sobre-a-publicacao__descricao{
+    padding-left: 1em;
+    font-size: 0.9em;
+    color: var(--cor-paragrafos);
+}
+
+.atividades__reacoes{
+    display: flex;
+    margin-top: -1em;
+    font-size: 0.75em;
+    
+    margin-bottom: -1.5em;
+}
+
+.atividades__comentarios{
+  padding-left: 50em;  
+}
+
+.atividades__tarefas{
+    padding-left: 19.8em;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.sobre{
+    background-color: var(--cor-fundo-cart);
+    font-weight: 400;
+    border-radius: 1em;
+    width: 47.3em;
+    height: 8em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+}
+
+.sobre__titulo{
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.sobre__paragrafo{
+    font-size: 0.9em;
+    color: var(--cor-paragrafos);
+}
+
+.experiencias{
+    background-color: var(--cor-fundo-cart);
+    font-weight: 400;
+    border-radius: 1em;
+    width: 47.3em;
+    height: 22.4em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+}
+
+.experiencias__titulo{
+    font-size: 1.25em;
+    font-weight: 600;
+    
+}
+
+.experiencias__lateral{
+    margin-top: -0.5em;
+}
+
+.experiencias__detalhe__circulo{
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 1.2em;
+    border-radius: 50%;
+    
+}
+
+.experiencias__detalhe__linha{
+    padding-left: 1.5em;
+}
+
+.espaco{
+    margin: -0.5em 0;
+    opacity: 0;
+}
+
+.espaco__entre{
+    margin: -0.6em 0;
+    opacity: 0;
+}
+
+.experiencias__centro{
+   margin-top: -18.5em;
+   margin-left: 4em;
+}
+
+.experiencia-profissional{
+    margin-top: -0.4em;
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: 1em;
+    
+}
+
+.experiencia-profissional__tempo{
+    margin-top: -0.6em;
+    font-size: 0.9em;
+}
+
+.paragrafo{
+    color: var(--cor-secundaria);
+    font-size: 0.9em;
+    margin-top: -1em;
+    
+}
+
+.formacao{
+    font-weight: 600;
+    background-color: var(--cor-fundo-cart);
+    border-radius: 1em;
+    width: 47.3em;
+    height: 10em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+}
+
+.formacao__titulo{
+    font-size: 1.25em;
+}
+
+.formacao__descricao{
+    font-size: 0.9em;
+    margin-top: -4.5em;
+    margin-left: 4.2em;
+}
+
+.formacao__descricao__titulo{
+    font-size: 1.2em;
+}
+
+.formacao__descricao__nome-curso{
+    margin: -0.7em 0;
+}
+
+.formacao__descricao__paragrafo{
+    color: var(--cor-secundaria);
+    
+}
+
+.idiomas{
+    font-weight: 600;
+    background-color: var(--cor-fundo-cart);
+    border-radius: 1em;
+    width: 47.3em;
+    height: 11.2em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 1em 0 6em;
+}
+
+.idiomas__titulo{
+    font-size: 1.25em;
+}
+
+.idiomas__linguas__titulo{
+    font-size: 1em;
+    margin-top: -0.5em;
+}
+
+.idiomas__linguas__nivel{
+    font-size: 0.9em;
+    color: var(--cor-secundaria);
+    margin: -0.8em 0 -0.2em;
+}
+
+.idiomas__separacao{
+    margin: 1em 0;
+}
+
+.cards-lateral{
+    font-weight: 700;
+    font-size: 0.9em;
+    background-color: var(--cor-fundo-cart);
+    border-radius: 1em;
+    width: 20em;
+    height: 34.2em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: -145.35em 0 0 65em;
+   
+}
+
+.cards-lateral__titulo{
+    font-size: 1.2em;
+}
+
+.cards-lateral__perfil{
+    margin: 0.8em 0;
+    padding-right: 1em;
+}
+
+.cards-lateral__perfil__mensagem-conectar{
+    text-decoration: none;
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    border-radius: 1em;
+    padding: 0.3em 1em;
+}
+
+.cards-lateral__perfil-descricao{
+    margin: -4.5em 0 0 3.8em;
+}
+
+.cards-lateral__perfil__sobre{
+    margin-top: -1em;
+    font-size: 0.75em;
+    color: var(--cor-secundaria);
+}
+
+.cards-lateral2{
+    font-weight: 700;
+    font-size: 0.9em;
+    background-color: var(--cor-fundo-cart);
+    border-radius: 1em;
+    width: 20em;
+    height: 34.2em;
+    top: 4.8em;
+    left: 9.7em;
+    padding-left: 1.5em;
+    padding-top: 0.1em;
+    margin: 1em 0 0 65em;
+}
